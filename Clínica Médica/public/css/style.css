@@ -1,0 +1,78 @@
+:root {
+  --primary: #2b6cb0;
+  --bg: #f7f7f7;
+  --card: #fff;
+  --text: #333;
+  --muted: #666;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: Arial, sans-serif; }
+
+.site-header {
+  background: linear-gradient(135deg, var(--primary), #4a89dc);
+  color: white;
+  padding: 12px 20px;
+}
+.nav {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.nav .brand {
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.nav a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+.nav a:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+.container {
+  max-width: 1100px;
+  padding: 20px;
+  margin: 0 auto;
+  display: block;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  margin-bottom: 16px;
+}
+
+.input, .btn {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+.btn {
+  background: var(--primary);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #1e5780;
+}
+.consulta-list {
+  list-style: none;
+  padding-left: 0;
+}
+.consulta-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+@media (max-width: 700px) {
+  .nav { gap: 8px; }
+  .container { padding: 12px; }
+}
